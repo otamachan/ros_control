@@ -41,4 +41,5 @@ before_script: # Use this to prepare your build for testing e.g. copy database c
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
   - export PYTHONPATH=/usr/lib/python2.7/dist-packages:$PYTHONPATH
   - catkin_make -j2 --cmake-args -Wno-dev
+  - catkin_make -j2 run_tests
 
